@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			var li = listItems[i];
 			// Add devour buttons to the page
 			var devourButton = document.createElement('button');
-			devourButton.className = 'devourBtn'; // Class name
+			devourButton.className = 'devourBtn btn btn-danger'; // Class name
 			devourButton.id = `devour${li.attributes[1].nodeValue}`; //ID name
 			console.log("Devour button id is " + devourButton.id);
 			devourButton.innerHTML = 'Devour it!'; // Text inside
