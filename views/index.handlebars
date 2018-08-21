@@ -7,7 +7,7 @@
 <ul id="menuBurgers" class="text-left list-group">
   {{#each burgers}}
     {{#unless devoured}}
-      <li class="devour list-group-item bg-success" id="{{this.id}}">{{this.burger_name}} </li>
+      <li class="devour list-group-item bg-success" id="{{this.id}}"><strong>{{this.burger_name}}</strong> </li>
     {{/unless}}
   {{/each}}
 </ul>
@@ -18,7 +18,7 @@
 <ul class="text-left list-group">
   {{#each burgers}}
     {{#if devoured}}
-      <li class="list-group-item bg-danger">{{this.burger_name}}</li>
+      <li class="list-group-item bg-danger"><strong>{{this.burger_name}}</strong></li>
     {{/if}}
   {{/each}}
 </ul>
